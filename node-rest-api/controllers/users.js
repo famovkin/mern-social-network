@@ -22,7 +22,7 @@ module.exports.updateUser = async (req, res) => {
           runValidators: true,
         },
       );
-      res.status(200).send(updatedUser);
+      res.status(200).send({ message: 'Профиль отредактирован', updatedUser });
     } else {
       res.status(403).send({ message: 'Вы можете редактировать только свой аккаунт' });
     }
@@ -35,7 +35,7 @@ module.exports.deleteUser = async (req, res) => {
   try {
     if (req.body.userId === req.params.id || req.body.isAdmin) {
       const deletedUser = await User.findByIdAndDelete(req.params.id);
-      res.status(200).send(deletedUser);
+      res.status(200).send({ message: 'Профиль удален', deletedUser });
     } else {
       res.status(403).send({ message: 'Вы можете удалить только свой профиль' });
     }
