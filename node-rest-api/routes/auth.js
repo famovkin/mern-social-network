@@ -1,8 +1,9 @@
 const express = require('express');
+const { createUser, login } = require('../controllers/auth');
 
-const authRoute = express.Router();
+const authRoutes = express.Router();
 
-// REGISTER
-authRoute.get('/', (req, res) => res.send('This is AUTH route'));
+authRoutes.post('/register', createUser);
+authRoutes.post('/login', login);
 
-module.exports = authRoute;
+module.exports = authRoutes;
