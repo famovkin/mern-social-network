@@ -1,0 +1,74 @@
+@import "../mixins";
+
+.sidebar {
+  flex: 2;
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+
+  &__wrapper {
+    padding: 20px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__friend {
+    margin-bottom: 15px;
+  }
+
+  &__friend:last-child {
+    margin-bottom: 0;
+  }
+
+  .item {
+    @include display-flex();
+
+    &__icon {
+      margin-right: 15px;
+    }
+
+    &__text {
+      @include noselect();
+    }
+  }
+
+  &__button {
+    font-weight: medium;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  &__hr {
+    margin: 20px 0;
+  }
+
+  .friend {
+    @include display-flex();
+
+    &__avatar {
+      width: 32px;
+      min-width: 32px;
+      height: 32px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    &__name {
+      @include noselect();
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c2c2c2;
+}
