@@ -8,7 +8,7 @@ import {
 
 function Share() {
   return (
-    <div className="share">
+    <div className="share feed__share">
       <div className="share__wrapper">
         <div className="share__input">
           <img

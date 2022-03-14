@@ -4,6 +4,8 @@
   flex: 2;
   height: calc(100vh - 50px);
   overflow-y: auto;
+  position: sticky;
+  top: 50px;
 
   &__wrapper {
     padding: 20px;
@@ -60,14 +62,14 @@
       @include noselect();
     }
   }
-}
 
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #c2c2c2;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #c2c2c2;
+  }
 }
