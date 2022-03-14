@@ -18,6 +18,11 @@
     padding: 10px 25px;
   }
 
+  &__avatar {
+    width: 32px;
+    height: 32px;
+  }
+
   &__logo {
     flex: 2;
 
@@ -102,13 +107,5 @@
     a:hover {
       color: darken($white, 20%);
     }
-  }
-
-  &__avatar {
-    height: 32px;
-    width: 32px;
-    object-fit: cover;
-    border-radius: 50%;
-    cursor: pointer;
   }
 }

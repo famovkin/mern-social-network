@@ -9,18 +9,19 @@ function TopBar() {
       </div>
       <div className="topbar__search">
         <Search />
-        <input
-          type="text"
-          placeholder="Найдите друзей"
-        />
+        <input type="text" placeholder="Найдите друзей" />
       </div>
       <div className="topbar__nav">
         <ul className="topbar__links">
           <li>
-            <a className="topbar__link" href="#">Homepage</a>
+            <a className="topbar__link" href="#">
+              Homepage
+            </a>
           </li>
           <li>
-            <a className="topbar__link" href="#">Timeline</a>
+            <a className="topbar__link" href="#">
+              Timeline
+            </a>
           </li>
         </ul>
         <ul className="topbar__icons">
@@ -37,7 +38,11 @@ function TopBar() {
             <span className="icon__badge">4</span>
           </li>
         </ul>
-        <img className="topbar__avatar" src="/assets/person/1.jpeg" alt="avatar" />
+        <img
+          className="avatar topbar__avatar"
+          src="/assets/person/1.jpeg"
+          alt="avatar"
+        />
       </div>
     </div>
   );

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Share from "./Share";
 
 function Feed() {
   return (
-    <div className="feed">Feed</div>
-  )
+    <div className="feed">
+      <div className="feed__wrapper">
+        <Share />
+      </div>
+    </div>
+  );
 }
 
-export default Feed
+export default Feed;

@@ -15,3 +15,9 @@
 body {
   min-width: 320px;
 }
+
+.avatar {
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}

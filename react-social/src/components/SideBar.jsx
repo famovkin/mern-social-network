@@ -57,38 +57,69 @@ function SideBar() {
         <hr className="sidebar__hr" />
         <ul className="sidebar__friend-list">
           <li className="friend sidebar__friend">
-            <img className="friend__avatar" src="/assets/person/2.jpeg" alt="avatar" />
+            <img
+              className="avatar friend__avatar"
+              src="/assets/person/2.jpeg"
+              alt="avatar"
+            />
             <p className="friend__name">Peter Parker</p>
           </li>
           <li className="friend sidebar__friend">
-            <img className="friend__avatar" src="/assets/person/3.jpeg" alt="avatar" />
+            <img
+              className="avatar friend__avatar"
+              src="/assets/person/3.jpeg"
+              alt="avatar"
+            />
             <p className="friend__name">Mary Jane</p>
           </li>
           <li className="friend sidebar__friend">
-            <img className="friend__avatar" src="/assets/person/4.jpeg" alt="avatar" />
+            <img
+              className="avatar friend__avatar"
+              src="/assets/person/4.jpeg"
+              alt="avatar"
+            />
             <p className="friend__name">Harry Osborn</p>
           </li>
           <li className="friend sidebar__friend">
-            <img className="friend__avatar" src="/assets/person/5.jpeg" alt="avatar" />
+            <img
+              className="avatar friend__avatar"
+              src="/assets/person/5.jpeg"
+              alt="avatar"
+            />
             <p className="friend__name">Robbie Robertson</p>
           </li>
           <li className="friend sidebar__friend">
-            <img className="friend__avatar" src="/assets/person/6.jpeg" alt="avatar" />
+            <img
+              className="avatar friend__avatar"
+              src="/assets/person/6.jpeg"
+              alt="avatar"
+            />
             <p className="friend__name">Curt Connors</p>
           </li>
           <li className="friend sidebar__friend">
-            <img className="friend__avatar" src="/assets/person/7.jpeg" alt="avatar" />
+            <img
+              className="avatar friend__avatar"
+              src="/assets/person/7.jpeg"
+              alt="avatar"
+            />
             <p className="friend__name">Flint Marko</p>
           </li>
           <li className="friend sidebar__friend">
-            <img className="friend__avatar" src="/assets/person/8.jpeg" alt="avatar" />
+            <img
+              className="avatar friend__avatar"
+              src="/assets/person/8.jpeg"
+              alt="avatar"
+            />
             <p className="friend__name">Gwen Stacy</p>
           </li>
           <li className="friend sidebar__friend">
-            <img className="friend__avatar" src="/assets/person/9.jpeg" alt="avatar" />
+            <img
+              className="avatar friend__avatar"
+              src="/assets/person/9.jpeg"
+              alt="avatar"
+            />
             <p className="friend__name">Adrian Toomes</p>
           </li>
-
         </ul>
       </div>
     </div>
