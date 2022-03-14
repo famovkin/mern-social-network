@@ -1,7 +1,7 @@
-@import './fonts';
-@import './variables';
-@import './components/all';
-@import './pages/all';
+@import "./fonts";
+@import "./variables";
+@import "./components/all";
+@import "./pages/all";
 
 * {
   padding: 0;
@@ -9,7 +9,7 @@
   list-style: none;
   outline: none;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -20,4 +20,34 @@ body {
   object-fit: cover;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.friend {
+  @include display-flex();
+
+  &__avatar {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  &__name {
+    @include noselect();
+  }
+
+  &__image-box {
+    position: relative;
+
+    .friend__badge {
+      position: absolute;
+      top: -2px;
+      right: 10px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: $green;
+      border: 2px solid $white;
+    }
+  }
 }

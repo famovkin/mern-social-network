@@ -11,11 +11,11 @@
   &__header {
     @include display-flex();
     justify-content: space-between;
+    margin-bottom: 10px;
 
     .post__info {
       @include display-flex();
       gap: 10px;
-      margin-bottom: 10px;
 
       .post__username {
         font-size: 15px;

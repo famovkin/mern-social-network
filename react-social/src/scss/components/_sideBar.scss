@@ -48,21 +48,6 @@
     margin-bottom: 20px;
   }
 
-  .friend {
-    @include display-flex();
-
-    &__avatar {
-      min-width: 32px;
-      width: 32px;
-      height: 32px;
-      margin-right: 10px;
-    }
-
-    &__name {
-      @include noselect();
-    }
-  }
-
   &::-webkit-scrollbar {
     width: 5px;
   }
