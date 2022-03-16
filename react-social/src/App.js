@@ -1,4 +1,9 @@
-import { Home, Profile } from "./pages";
+import {
+  Home,
+  Profile,
+  Login,
+  Register,
+} from "./pages";
 
 function App() {
   return <Profile />;

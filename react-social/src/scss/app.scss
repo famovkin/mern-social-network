@@ -51,3 +51,42 @@ body {
     }
   }
 }
+
+.button {
+  padding: 17px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all $duration ease-in-out;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &_type_login {
+    background-color: $blue;
+
+    &:hover {
+      background-color: darken($blue, 3%);
+    }
+  }
+
+  &_type_reg {
+    background-color: $green;
+    width: 80%;
+    align-self: center;
+    padding: 17px 10px;
+
+    &:hover {
+      background-color: darken($green, 3%);
+    }
+  }
+}
