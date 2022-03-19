@@ -3,7 +3,7 @@ import { Search, Person, Chat, Notifications } from "@mui/icons-material";
 
 function TopBar() {
   return (
-    <div className="topbar">
+    <header className="topbar">
       <div className="topbar__logo">
         <h1>Social Network</h1>
       </div>
@@ -11,16 +11,16 @@ function TopBar() {
         <Search />
         <input type="text" placeholder="Найдите друзей" />
       </div>
-      <div className="topbar__nav">
+      <nav className="topbar__nav">
         <ul className="topbar__links">
           <li>
             <a className="topbar__link" href="#">
-              Homepage
+              Главная
             </a>
           </li>
           <li>
             <a className="topbar__link" href="#">
-              Timeline
+              Лента
             </a>
           </li>
         </ul>
@@ -43,8 +43,8 @@ function TopBar() {
           src="/assets/person/1.jpeg"
           alt="avatar"
         />
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }
 
