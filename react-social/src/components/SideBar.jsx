@@ -13,48 +13,47 @@ import {
 
 function SideBar() {
   return (
-    <div className="sidebar">
+    <section className="sidebar">
       <div className="sidebar__wrapper">
         <ul className="sidebar__list">
           <li className="item sidebar__item">
             <RssFeed className="item__icon" />
-            <p className="item__text">Feed</p>
+            <p className="item__text">Лента</p>
           </li>
           <li className="item sidebar__item">
             <Chat className="item__icon" />
-            <p className="item__text">Chats</p>
+            <p className="item__text">Чаты</p>
           </li>
           <li className="item sidebar__item">
             <PlayCircleFilledOutlined className="item__icon" />
-            <p className="item__text">Videos</p>
+            <p className="item__text">Видео</p>
           </li>
           <li className="item sidebar__item">
             <Group className="item__icon" />
-            <p className="item__text">Groups</p>
-          </li>
-          <li className="item sidebar__item">
-            <Bookmark className="item__icon" />
-            <p className="item__text">Bookmarks</p>
+            <p className="item__text">Группы</p>
           </li>
           <li className="item sidebar__item">
             <HelpOutline className="item__icon" />
-            <p className="item__text">Questions</p>
+            <p className="item__text">FAQ</p>
           </li>
           <li className="item sidebar__item">
             <WorkOutline className="item__icon" />
-            <p className="item__text">Jobs</p>
+            <p className="item__text">Вакансии</p>
           </li>
           <li className="item sidebar__item">
             <Event className="item__icon" />
-            <p className="item__text">Events</p>
+            <p className="item__text">События</p>
           </li>
           <li className="item sidebar__item">
             <School className="item__icon" />
-            <p className="item__text">Courses</p>
+            <p className="item__text">Курсы</p>
           </li>
         </ul>
-        <button className="sidebar__button">Show more</button>
         <hr className="sidebar__hr" />
+        <div className="sidebar__bookmark-box">
+          <Bookmark className="item__icon" />
+          <h3 className="sidebar__title">Закладки</h3>
+        </div>
         <ul className="sidebar__friend-list">
           <li className="friend sidebar__friend">
             <img
@@ -122,7 +121,7 @@ function SideBar() {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 

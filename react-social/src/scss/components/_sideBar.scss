@@ -7,8 +7,40 @@
   position: sticky;
   top: 50px;
 
+  @media (max-width: 1024px) {
+    max-width: 95px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 75px;
+    height: calc(100vh - 130px);
+    top: 130px;
+  }
+
   &__wrapper {
     padding: 20px;
+
+    @media (max-width: 768px) {
+      padding: 10px;
+    }
+  }
+
+  &__bookmark-box {
+    @include display-flex();
+    margin-bottom: 15px;
+
+    @media (max-width: 1024px) {
+      justify-content: center;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+
+      @media (max-width: 1024px) {
+        display: none;
+      }
+    }
   }
 
   &__item {
@@ -17,21 +49,41 @@
 
   &__friend {
     margin-bottom: 15px;
-  }
 
-  &__friend:last-child {
-    margin-bottom: 0;
+    @media (max-width: 1024px) {
+      justify-content: center;
+
+      p {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .item {
     @include display-flex();
 
+    @media (max-width: 1024px) {
+      justify-content: center;
+    }
+
     &__icon {
       margin-right: 15px;
+
+      @media (max-width: 1024px) {
+        margin-right: 0;
+      }
     }
 
     &__text {
       @include noselect();
+
+      @media (max-width: 1024px) {
+        display: none;
+      }
     }
   }
 
