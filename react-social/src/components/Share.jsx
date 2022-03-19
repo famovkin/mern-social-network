@@ -30,11 +30,11 @@ function Share() {
               <span>Теги</span>
             </div>
             <div className="share__option">
-              <LocationOn className="share__icon" htmlColor="green"/>
+              <LocationOn className="share__icon" htmlColor="green" />
               <span>Локация</span>
             </div>
             <div className="share__option">
-              <EmojiEmotions className="share__icon" htmlColor="goldenrod"/>
+              <EmojiEmotions className="share__icon" htmlColor="goldenrod" />
               <span>Эмоции</span>
             </div>
           </div>

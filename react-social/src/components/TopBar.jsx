@@ -1,5 +1,11 @@
 import React from "react";
-import { Search, Person, Chat, Notifications } from "@mui/icons-material";
+import {
+  Search,
+  Person,
+  Chat,
+  Notifications,
+  KeyboardDoubleArrowLeft,
+} from "@mui/icons-material";
 
 function TopBar() {
   return (
@@ -44,6 +50,7 @@ function TopBar() {
           alt="avatar"
         />
       </nav>
+      <KeyboardDoubleArrowLeft className="circle-button circle-button_type_arrow" />
     </header>
   );
 }

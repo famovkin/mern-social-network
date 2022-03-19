@@ -15,7 +15,7 @@
   @media (max-width: 768px) {
     max-width: 75px;
     height: calc(100vh - 130px);
-    top: 130px;
+    top: 120px;
   }
 
   &__wrapper {
@@ -73,6 +73,7 @@
 
     &__icon {
       margin-right: 15px;
+      color: $blue;
 
       @media (max-width: 1024px) {
         margin-right: 0;

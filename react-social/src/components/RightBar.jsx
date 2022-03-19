@@ -1,4 +1,5 @@
 import React from "react";
+import { Close } from "@mui/icons-material";
 
 const HomeRightBar = () => {
   return (
@@ -124,6 +125,7 @@ function RightBar({ profile }) {
     <section className="rightbar">
       <div className="rightbar__wrapper">
         {profile ? <ProfileRightBar /> : <HomeRightBar />}
+        <Close className="circle-button circle-button_type_close" />
       </div>
     </section>
   );
