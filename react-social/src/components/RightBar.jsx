@@ -92,27 +92,27 @@ const ProfileRightBar = () => {
       <div className="rightbar__followings">
         <div className="rightbar__following">
           <img src="/assets/person/1.jpeg" alt="avatar" />
-          <p>Питер Паркер</p>
+          <p>Piter Parker</p>
         </div>
         <div className="rightbar__following">
           <img src="/assets/person/7.jpeg" alt="avatar" />
-          <p>Питер Паркер</p>
+          <p>Piter Parker</p>
         </div>
         <div className="rightbar__following">
           <img src="/assets/person/6.jpeg" alt="avatar" />
-          <p>Питер Паркер</p>
+          <p>Piter Parker</p>
         </div>
         <div className="rightbar__following">
           <img src="/assets/person/5.jpeg" alt="avatar" />
-          <p>Питер Паркер</p>
+          <p>Piter Parker</p>
         </div>
         <div className="rightbar__following">
           <img src="/assets/person/3.jpeg" alt="avatar" />
-          <p>Питер Паркер</p>
+          <p>Piter Parker</p>
         </div>
         <div className="rightbar__following">
           <img src="/assets/person/4.jpeg" alt="avatar" />
-          <p>Питер Паркер</p>
+          <p>Piter Parker</p>
         </div>
       </div>
     </>
@@ -121,11 +121,11 @@ const ProfileRightBar = () => {
 
 function RightBar({ profile }) {
   return (
-    <div className="rightbar">
+    <section className="rightbar">
       <div className="rightbar__wrapper">
         {profile ? <ProfileRightBar /> : <HomeRightBar />}
       </div>
-    </div>
+    </section>
   );
 }
 

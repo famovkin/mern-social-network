@@ -5,11 +5,13 @@ function Home() {
   return (
     <>
       <TopBar />
-      <div className="home">
+      <main className="home">
         <SideBar />
-        <Feed />
-        <RightBar />
-      </div>
+        <div className="home__container">
+          <Feed />
+          <RightBar />
+        </div>
+      </main>
     </>
   );
 }

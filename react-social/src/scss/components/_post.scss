@@ -2,10 +2,16 @@
 @import "../variables.scss";
 
 .post {
-  @include block-in-feed();
+  width: 100%;
+  border-radius: 10px;
+  @include box-shadow();
 
   &__wrapper {
     padding: 20px;
+
+    @media (max-width: 600px) {
+      padding: 13px;
+    }
   }
 
   &__header {
@@ -29,6 +35,7 @@
   }
 
   &__avatar {
+    min-width: 32px;
     width: 32px;
     height: 32px;
   }
@@ -52,26 +59,38 @@
 
     .post__likes {
       @include display-flex();
-      gap: 5px;
+      gap: 7px;
 
       img {
         width: 32px;
         height: 32px;
         cursor: pointer;
         transition: all $duration ease-in-out;
-      }
 
-      img:hover {
-        transform: translateY(-5px);
-      }
+        &:hover {
+          transform: translateY(-5px);
+        }
 
-      img:active {
-        transform: scale(0.9);
+        &:active {
+          transform: scale(0.9);
+        }
       }
     }
 
-    .span {
+    span {
       font-size: 15px;
+
+      @media (max-width: 900px) {
+        font-size: 13px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 12px;
+      }
     }
 
     .post__comments {

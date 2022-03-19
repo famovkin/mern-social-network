@@ -1,6 +1,10 @@
 .feed {
   flex: 4;
 
+  @media (max-width: 768px) {
+    flex: 7;
+  }
+
   &__wrapper {
     padding: 20px;
   }

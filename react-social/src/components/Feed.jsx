@@ -3,13 +3,13 @@ import { Share, Post } from "../components";
 
 function Feed() {
   return (
-    <div className="feed">
+    <section className="feed">
       <div className="feed__wrapper">
         <Share />
         <Post />
         <Post />
       </div>
-    </div>
+    </section>
   );
 }
 

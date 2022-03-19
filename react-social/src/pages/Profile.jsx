@@ -5,9 +5,9 @@ function Profile() {
   return (
     <>
       <TopBar />
-      <div className="profile">
+      <main className="profile">
         <SideBar />
-        <div className="profile__container">
+        <section className="profile__container">
           <div className="profile__content">
             <div className="profile__cover">
               <img
@@ -30,8 +30,8 @@ function Profile() {
             <Feed />
             <RightBar profile />
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </>
   );
 }

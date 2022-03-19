@@ -1,10 +1,29 @@
 @import "../mixins";
+@import "../variables.scss";
 
 .rightbar {
   flex: 3;
+  overflow: hidden;
 
   &__wrapper {
     padding: 20px 20px 0 0;
+
+    @media (max-width: 768px) {
+      transform: translateX(100%);
+    }
+
+    &_opened {
+      transform: translateX(0);
+      @include box-shadow();
+      position: absolute;
+      top: 20px;
+      right: 0;
+      width: 80%;
+      padding: 20px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      background-color: $white;
+    }
   }
 
   &__birthday {

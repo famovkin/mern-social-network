@@ -9,8 +9,17 @@
     flex: 7;
   }
 
+  &__content {
+    margin-bottom: 5px;
+  }
+
   &__home-info {
+    position: relative;
     display: flex;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
 
   &__cover {

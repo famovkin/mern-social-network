@@ -1,4 +1,14 @@
 .home {
   display: flex;
   width: 100%;
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex: 7;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
 }
