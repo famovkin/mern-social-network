@@ -120,13 +120,14 @@ const ProfileRightBar = () => {
   );
 };
 
-function RightBar({ profile }) {
+function RightBar({ profile, isOpen, closeRightBar }) {
   return (
-    <section className="rightbar">
-      <div className="rightbar__wrapper">
-        {profile ? <ProfileRightBar /> : <HomeRightBar />}
-        <Close className="circle-button circle-button_type_close" />
-      </div>
+    <section className={`rightbar ${isOpen && "rightbar_opened"}`}>
+      {profile ? <ProfileRightBar /> : <HomeRightBar />}
+      <Close
+        className={`circle-button circle-button_type_close ${!isOpen && "circle-button_type_hidden"}`}
+        onClick={closeRightBar}
+      />
     </section>
   );
 }

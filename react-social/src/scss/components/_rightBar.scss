@@ -3,27 +3,26 @@
 
 .rightbar {
   flex: 3;
-  overflow: hidden;
+  padding: 20px;
+  transition-property: all;
+  transition-duration: $duration, 0s;
+  transition-delay: 0s, $duration;
 
-  &__wrapper {
-    padding: 20px 20px 0 0;
+  @media (max-width: 768px) {
+    position: absolute;
+    @include box-shadow();
+    top: 20px;
+    right: 0;
+    width: 80%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: $white;
+    transform: translateX(100%);
+  }
 
-    @media (max-width: 768px) {
-      transform: translateX(100%);
-    }
-
-    &_opened {
-      transform: translateX(0);
-      @include box-shadow();
-      position: absolute;
-      top: 20px;
-      right: 0;
-      width: 80%;
-      padding: 20px 20px 20px 23px;
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
-      background-color: $white;
-    }
+  &_opened {
+    transform: translateX(0);
+    transition-delay: 0s, 0s;
   }
 
   &__birthday {

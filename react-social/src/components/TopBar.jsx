@@ -7,7 +7,7 @@ import {
   KeyboardDoubleArrowLeft,
 } from "@mui/icons-material";
 
-function TopBar() {
+function TopBar({ openRightBar, isRightBarOpened }) {
   return (
     <header className="topbar">
       <div className="topbar__logo">
@@ -50,7 +50,12 @@ function TopBar() {
           alt="avatar"
         />
       </nav>
-      <KeyboardDoubleArrowLeft className="circle-button circle-button_type_arrow" />
+      <KeyboardDoubleArrowLeft
+        className={`circle-button circle-button_type_arrow ${
+          isRightBarOpened && "circle-button_type_hidden"
+        }`}
+        onClick={openRightBar}
+      />
     </header>
   );
 }

@@ -109,6 +109,13 @@ body {
   font-size: 30px !important;
   cursor: pointer;
   @include box-shadow();
+  transition-property: all !important;
+  transition-duration: $duration, 0s;
+  transition-delay: 0s, $duration;
+
+  @media (max-width: 768px) {
+    visibility: visible !important;
+  }
 
   &:hover {
     animation: none;
@@ -120,30 +127,25 @@ body {
     top: 45px;
     visibility: hidden;
     animation: left-shaking 2s infinite ease-in-out;
-
-    @media (max-width: 768px) {
-      visibility: visible;
-    }
   }
 
   &_type_close {
     position: absolute;
     top: 20px;
     left: -15px;
-    visibility: hidden;
-    transition: all $duration ease-in-out !important;
 
     &:hover {
-      transform: scale(1.1) !important;
-    }
-
-    @media (max-width: 768px) {
-      visibility: visible;
+      transform: scale(1.1);
     }
   }
 
+  &_type_hidden {
+    opacity: 0;
+    transition-delay: 0s, 0s;
+  }
+
   &:active {
-    transform: scale(0.95) !important;
+    transform: scale(0.95);
   }
 }
 

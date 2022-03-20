@@ -16,6 +16,7 @@
   &__home-info {
     position: relative;
     display: flex;
+    overflow: hidden;
 
     @media (max-width: 768px) {
       display: block;

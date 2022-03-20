@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { TopBar, Feed, RightBar, SideBar } from "../components";
 
 function Profile() {
+  const [rightBarOpened, setRightBarOpened] = useState(false);
+
+  const openRightBar = () => setRightBarOpened(true);
+  const closeRightBar = () => setRightBarOpened(false);
+
   return (
     <>
-      <TopBar />
+      <TopBar openRightBar={openRightBar} isRightBarOpened={rightBarOpened} />
       <main className="profile">
         <SideBar />
         <section className="profile__container">
@@ -28,7 +33,11 @@ function Profile() {
           </div>
           <div className="profile__home-info">
             <Feed />
-            <RightBar profile />
+            <RightBar
+              isOpen={rightBarOpened}
+              closeRightBar={closeRightBar}
+              profile
+            />
           </div>
         </section>
       </main>
