@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import {
   RssFeed,
   Chat,
@@ -125,4 +125,4 @@ function SideBar() {
   );
 }
 
-export default SideBar;
+export default memo(SideBar);

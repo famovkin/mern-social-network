@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Share, Post } from "../components";
 
 function Feed() {
@@ -13,4 +13,4 @@ function Feed() {
   );
 }
 
-export default Feed;
+export default memo(Feed);
